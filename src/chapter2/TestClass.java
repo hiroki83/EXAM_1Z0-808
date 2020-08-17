@@ -1,4 +1,4 @@
-package chapter2.castingPrimitiveValues;
+package chapter2;
 public class TestClass {
   public static void main(String[] args) {
     int x = (int) 1.0;

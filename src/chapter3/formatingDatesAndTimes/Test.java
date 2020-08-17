@@ -1,4 +1,4 @@
-package chapter3.workingWithDatesAndTimes.formatingDatesAndTimes;
+package chapter3.formatingDatesAndTimes;
 import java.time.*;
 import java.time.format.*;
 public class Test {

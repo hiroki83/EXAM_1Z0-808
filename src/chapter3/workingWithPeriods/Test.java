@@ -1,17 +1,16 @@
-package chapter3.workingWithDatesAndTimes.workingWithPeriods;
+package chapter3.workingWithPeriods;
 import java.time.*;
-public class Test2 {
+public class Test {
   public static void main(String[] args) {
     LocalDate start = LocalDate.of(2015, Month.JANUARY, 1);
     LocalDate end   = LocalDate.of(2015, Month.MARCH, 30);
-    Period period = Period.ofMonths(1);
-    performAnimalEnrichment(start, end, period);
+    performAnimalEnrichment(start, end);
   }
-  private static void performAnimalEnrichment(LocalDate start, LocalDate end, Period period) {
+  private static void performAnimalEnrichment(LocalDate start, LocalDate end) {
     LocalDate upTo = start;
     while (upTo.isBefore(end)) {
       System.out.println("give new toy: " + upTo);
-      upTo = upTo.plus(period);
+      upTo = upTo.plusMonths(1);
     }
   }
 }
