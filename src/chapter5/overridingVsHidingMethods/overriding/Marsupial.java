@@ -1,6 +1,6 @@
 package chapter5.overridingVsHidingMethods.overriding;
 public class Marsupial {
-  public static boolean isBiped() {
+  public boolean isBiped() {
     return false;
   }
   public void getMarsupialDescription() {

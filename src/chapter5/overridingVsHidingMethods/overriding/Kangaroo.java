@@ -1,6 +1,6 @@
 package chapter5.overridingVsHidingMethods.overriding;
 public class Kangaroo extends Marsupial {
-  public static boolean isBiped() {
+  public boolean isBiped() {
     return true;
   }
   public void getKangarooDescription() {
